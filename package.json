@@ -13,9 +13,17 @@
   "main": "./extension.js",
   "contributes": {
     "commands": [{
-      "command": "rails-open-test.helloWorld",
+      "command": "rails-open-test.openTest",
       "title": "Hello World"
-    }]
+    }],
+    "keybindings": [
+      {
+        "command": "rails-open-test.openTest",
+        "key": "ctrl+shift+t",
+        "mac": "cmd+shift+t",
+        "when": "editorTextFocus"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
